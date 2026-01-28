@@ -1,0 +1,66 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-GatewayMsApplication<GatewayMs>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.hms.GatewayMs.GatewayMsApplication",
+      "projectName": "GatewayMs",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-UserMsApplication<UserMS>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.hms.UserMS.UserMsApplication",
+      "projectName": "UserMS",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-GatewayMsApplication<GatewayMS>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.hms.GatewayMS.GatewayMsApplication",
+      "projectName": "GatewayMS",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=55066 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=GatewayMS"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ProfileMsApplication<ProfileMS>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.hms.ProfileMS.ProfileMsApplication",
+      "projectName": "ProfileMS",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-AppointmentApplication<Appointment>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.hms.appointment.Appointment.AppointmentApplication",
+      "projectName": "Appointment",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58798 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=Appointment"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-EurekaServerApplication<Eureka-Server>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.hms.eureka_server.EurekaServerApplication",
+      "projectName": "Eureka-Server",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
