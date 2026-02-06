@@ -41,11 +41,11 @@ public class SecurityConfiguration {
    http.csrf(csrf -> csrf.disable())
     .authorizeHttpRequests(auth -> auth
         .requestMatchers(request -> {
-            // Check header
-            String secret = request.getHeader("x-Secret-Key");
+            // Check header (case-insensitive)
+            String secret = request.getHeader("X-Secret-Key");
             return "SECRET".equals(secret);  // true = permit
         }).permitAll()
-        .anyRequest().denyAll()
+        .anyRequest().authenticated()
     );
     
     return http.build();
